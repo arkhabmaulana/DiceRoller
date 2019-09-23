@@ -3,7 +3,6 @@ package com.example.project.diceroller
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
@@ -23,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
 
-        val resultText: TextView = findViewById(R.id.result_text)
+//        val resultText: TextView = findViewById(R.id.result_text)
 
         val randomInt = Random().nextInt(6) + 1
 
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        resultText.text = randomInt.toString()
+//        resultText.text = randomInt.toString()
         diceImage.setImageResource(drawableResource)
 
     }
