@@ -1,12 +1,10 @@
 package com.example.project.diceroller
 
-import android.media.Image
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,11 +15,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val rollButton: Button = findViewById(R.id.roll_button)
-        rollButton.text = "Let's Roll"
         rollButton.setOnClickListener{
             rollDice()
         }
-
         diceImage = findViewById(R.id.dice_image)
     }
 
